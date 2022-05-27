@@ -14,7 +14,7 @@ class Post extends Model
         'description' => 'required|min:10'
     ];
 
-    private $fillable = ['title', 'description'];
+    protected $fillable = ['title', 'description', 'website_id'];
 
     public function website()
     {

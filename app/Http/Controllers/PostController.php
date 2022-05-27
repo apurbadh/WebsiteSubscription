@@ -34,6 +34,7 @@ class PostController extends Controller
         }
 
         $data = [
+            "website_id" => $website->id,
             'title' => $request->input('title'),
             'description' => $request->input('description')
         ];
