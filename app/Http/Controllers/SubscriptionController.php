@@ -20,6 +20,7 @@ class SubscriptionController extends Controller
             return response()->json([
               'errors' => $validator->errors(),
               'status' => Response::HTTP_BAD_REQUEST,
+              'sucess' => false
             ], Response::HTTP_BAD_REQUEST);
         }
         
