@@ -17,11 +17,13 @@ class SubscriptionController extends Controller
 
         if ($validator->fails())
         {
-            return [
-                'sucess' => false,
-                'message' => "Invalid Email"
-            ];
+            return response()->json([
+              'errors' => $validator->errors(),
+              'status' => Response::HTTP_BAD_REQUEST,
+              'sucess' => false
+            ], Response::HTTP_BAD_REQUEST);
         }
+        
         $website = Website::where('slug', $website)->first();
 
         if ($website == null)

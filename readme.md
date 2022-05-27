@@ -1,10 +1,9 @@
-# ![Website Subscription]
 
 # Getting started
 
 ## Installation
 
-Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/8.0/installation#installation)
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/8.x/installation#installation)
 
 
 Clone the repository
@@ -102,16 +101,16 @@ The api can now be accessed at
 
 ## Endpoints 
 
-/api/subscribe/website-slug 
+### /api/subscribe/website-slug 
 
-### Needed Values
+#### Needed Values
 ```
 email - string
 ```
 
-/api/website-slug
+### /api/website-slug
 
-### Needed Values
+#### Needed Values
 
 ```
 title - string
