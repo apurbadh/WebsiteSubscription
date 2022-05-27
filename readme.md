@@ -101,16 +101,16 @@ The api can now be accessed at
 
 ## Endpoints 
 
-/api/subscribe/website-slug 
+### /api/subscribe/website-slug 
 
-### Needed Values
+#### Needed Values
 ```
 email - string
 ```
 
-/api/website-slug
+### /api/website-slug
 
-### Needed Values
+#### Needed Values
 
 ```
 title - string
