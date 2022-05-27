@@ -9,8 +9,15 @@ class Website extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['website_name', 'slug'];
+
     public function subscriptions()
     {
         return $this->hasMany(Subscription::class, 'website_id');
+    }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class, 'website_id');
     }
 }

@@ -13,10 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('websites', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('website_name')->unique();
-            $table->string('slug')->unique();
+            $table->string('title');
+            $table->text('description');
+            $table->foreignId('website_id');
+            $table->foreign('website_id')
+                  ->references('id')
+                  ->on('websites');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('websites');
+        Schema::dropIfExists('posts');
     }
 };

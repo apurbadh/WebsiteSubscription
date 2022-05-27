@@ -22,7 +22,7 @@ class SubscriptionController extends Controller
                 'message' => "Invalid Email"
             ];
         }
-        $website = Website::where('website_name', $website)->first();
+        $website = Website::where('slug', $website)->first();
 
         if ($website == null)
         {

@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Subscription extends Model
+class Post extends Model
 {
     use HasFactory;
 
     public static $rules = [
-        "email" => "required|email",
+        'title' => 'required|unique:posts|min:3',
+        'description' => 'required|min:10'
     ];
 
-    protected $fillable = ['email', 'website_id'];
+    private $fillable = ['title', 'description'];
 
     public function website()
     {
