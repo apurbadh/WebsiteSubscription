@@ -99,15 +99,8 @@ The api can now be accessed at
 
     http://localhost:8000/api
 
-Request headers
 
-| **Required** 	| **Key**              	| **Value**            	|
-|----------	|------------------	|------------------	|
-| Yes      	| Content-Type     	| application/json 	|
-| Yes      	| X-Requested-With 	| XMLHttpRequest   	|
-
-
-# Endpoints 
+## Endpoints 
 
 /api/subscribe/website-slug 
 
