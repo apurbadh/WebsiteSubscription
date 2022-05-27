@@ -1,4 +1,4 @@
-# ![Website Subscription]
+# ![ Website Subscription ]
 
 # Getting started
 
